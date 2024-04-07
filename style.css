@@ -1,33 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+
 .signature{
-    margin: 15px 15px 15px 15px;
+    position: fixed;
+    margin: 55px 15px 15px 15px;
     font-family: Abril Fatface, cursive; 
-
-
 }
+
 .nav-li{
     font-size: 23px;
     font-weight: 600;
-    border: 1px solid #C692B9;
-    background-color: #C692B9;
+    border: 1px solid#A26092;
+    background-color: #A26092;
     margin: 20px 20px 20px 20px;
     padding: 10px 20px;
     border-radius: 10%;
 }
 
+.navbar-nav{
+    position: fixed;
+    top: 20%;
+}
+
 .navbar-nav .nav-li .nav-link.nav-text {
+    display: grid;
+    justify-content: center;
     color: aliceblue;
+    align-items: center;
 }
 
 .nav-back{
     margin-top: 40px;
-    background-color: #E4CCDE;
+    background-color: #FCF1FF;
     width: min-content;
 }
 
-/* CSS */
+.icon{
+    display: grid;
+    justify-content: center;
+    padding: 5px 5px 5px 5px;
+}
 
-.collapse.show {
-    height: auto !important; /* Don't set a fixed height */
-    width: 150px;
-  }
-  
+.front {
+    position: absolute;
+    top: 0;
+    left: 15%; 
+    width: calc(100% - 190px); 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.front-content {
+    text-align: left;
+    color: #555;
+    left: 20%;
+    top: 38%;
+    position: absolute;
+}
+
+.imgk{
+    position:absolute;
+    top:20%;
+    left:75%;
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+}
+
+.waving-icon {
+    font-size: 1px; 
+    animation: wave 2s infinite; 
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg); /* Initial and final position */
+    }
+    25% {
+        transform: rotate(-45deg); /* Rotate left */
+    }
+    75% {
+        transform: rotate(45deg); /* Rotate right */
+    }
+}
+
+
+.waving-icon {
+    font-size: 48px;
+    position: absolute;
+    left: 13%;
+    top: 30%;
+}
+
+
+.about {
+    position: absolute;
+    top: 130%;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-heading {
+    
+    margin-left: 50%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size:120px;
+      letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+   
+    -webkit-text-stroke-color: white;
+    text-shadow: -5px -3px 0px #a26092, 5px -14px 4px #000000;;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 50px; 
+}
+
+.card {
+    width: auto;
+    margin-left: 20%;
+    padding: 20px;
+    background-color: #fef8ff;
+    border-radius: 10px;
+    box-shadow: -20px 19px 13px 0px #2306438c;
+    transition: transform 0.2s cubic-bezier(1, -0.05, 0, 1.1);
+}
+
+
+.card:hover {
+    transform: translateY(-30px); /* Pop-up effect on hover */
+}
+
+
+.project {
+    position: absolute;
+    top: 200vh;
+}
+
+
+ 
+
