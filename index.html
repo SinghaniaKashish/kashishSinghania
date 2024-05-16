@@ -6,17 +6,33 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 
-<body style="background-color:rgb(252, 241, 255)  " >
+<body style="background-color: #faebff  " >
     <div class="main-container" >
         <div class ="fst">
-
-            <h1 class="signature">KASHISH SINGHANIA</h1>
+            <h2 class="signature">KASHISH SINGHANIA</h2>
             
-            
+            <!-- NAVBAR -->
             <nav class="navbar navbar-expand-lg navbar-light ">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,11 +42,11 @@
                     <ul class="navbar-nav flex-column me-auto mb-2 mb-lg-0 nav-back">
                         <li class="nav-item nav-li">
                             <a class="nav-link nav-text" href="#">
-                                <i class="fas fa-home icon"></i> HOME
+                                <i class="fas fa-home icon"></i> ABOUT
                             </a>
                         </li>
                         <li class="nav-item nav-li ">
-                            <a class="nav-link nav-text" href="#about">
+                            <a class="nav-link nav-text" href="#">
                                 <i class="fas fa-briefcase icon"></i> PROJECTS
                             </a>
                         </li>
@@ -42,7 +58,6 @@
                     </ul>  
                 </div>  
             </nav>
-            
             
             <!--front page-->
             <div class="front">
@@ -65,8 +80,8 @@
         
         <!--About Page-->
         <div class="about" >
-            <h1 class="about-heading">About</h1>
-
+            <h1 class="about-heading">ABOUT</h1>
+        
             <div class="card-container">
                 <div class="card">
                     <h2>Web Development</h2>
@@ -77,19 +92,227 @@
                     <p>Proficient in Java, C, and Python. Solving problem with the knowledge of data structure & algorithm  and Object-Oriented Programming Concepts.</p>
                 </div>
             </div>
-                
-            
+
         </div>
+        
+        <!-- PROJECTS -->
+        <div class="projects">
+            <h1 class="project-heading">PROJECTS</h1>
 
-
-
-
-
-
-
-
-    </div>   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <div class="pcards-container">
+                <div class="pcards">
+                    <label id="overdue">
+                        <input type="checkbox" />
+                        <article>
+                            <div class="front" id="capsuleclock" >
+                                <header>
+                                    <h2>Capsule Clock</h2>
+                                </header>
+                                <h4>Ongoing</h4>
+                            </div>
+                            <div class="back">
+                                <header>
+                                    <h2>Overdue</h2>
+                                    <span class="material-symbols-outlined"> close </span>
+                                </header>
+                                <p>More Information</p>
+                            </div>
+                        </article>
+                    </label>
+                    <label id="summary">
+                        <input type="checkbox" />
+                        <article>
+                            <div class="front" id="safar">
+                                <header>
+                                    <h2>Safar</h2>
+                                    
+                                </header>
+                                <h4>Completed</h4>
+                            </div>
+                            <div class="back">
+                                <header>
+                                    <h2>Summary</h2>
+                                    <!-- <span class="material-symbols-outlined"> close </span> -->
+                                </header>
+                                <p>More Information</p>
+                            </div>
+                        </article>
+                    </label>
+                    
+                    <label id="features">
+                        <input type="checkbox" />
+                        <article>
+                            <div class="front" id="drumkit">
+                                <header>
+                                    <h2 style="color:aliceblue; font-weight:800">Drum Kit</h2>
+                                </header>
+                                <h4 style="color:aliceblue; font-weight:800">Completed</h4>
+                            </div>
+                            <div class="back">
+                                <header>
+                                    <h2>Features</h2>
+                                    <span class="material-symbols-outlined"> close </span>
+                                </header>
+                                <p>More Information</p>
+                            </div>
+                        </article>
+                    </label>
+                    
+                </div>
+                <div class="pcards">
+                    <label id="summary">
+                        <input type="checkbox" />
+                        <article>
+                            <div class="front" id ="simongame">
+                                <header>
+                                    <h2>Simon game</h2>
+                                </header>
+                                <h4>Completed</h4>
+                            </div>
+                            <div class="back">
+                                <header>
+                                    <h2>Summary</h2>
+                                    <span class="material-symbols-outlined"> close </span>
+                                </header>
+                                <p>More Information</p>
+                            </div>
+                        </article>
+                    </label>
+                    <!-- <label id="overdue">
+                        <input type="checkbox" />
+                        <article>
+                            <div class="front">
+                                <header>
+                                    <h2>Overdue</h2>
+                                    <span class="material-symbols-outlined"> more_vert </span>
+                                </header>
+                                <var>17</var>
+                                <h3>Projects</h3>
+                                <h4>Yesterday: 9</h4>
+                            </div>
+                            <div class="back">
+                                <header>
+                                    <h2>Overdue</h2>
+                                    <span class="material-symbols-outlined"> close </span>
+                                </header>
+                                <p>More Information</p>
+                            </div>
+                        </article>
+                    </label>
+                    <label id="features">
+                        <input type="checkbox" />
+                        <article>
+                            <div class="front">
+                                <header>
+                                    <h2>Features</h2>
+                                    <span class="material-symbols-outlined"> more_vert </span>
+                                </header>
+                                <var>38</var>
+                                <h3>Proposals</h3>
+                                <h4>Implemented: 6</h4>
+                            </div>
+                            <div class="back">
+                                <header>
+                                    <h2>Features</h2>
+                                    <span class="material-symbols-outlined"> close </span>
+                                </header>
+                                <p>More Information</p>
+                            </div>
+                        </article>
+                    </label> -->
+                    
+                </div>
+            </div>
+            <h1 class="contact-heading">CONTACT</h1>
+        </div>
+        
+        <!-- FOOTER -->
+        
+        <footer>
+            <div class="background">
+                <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="100%"
+                height="100%"
+                viewBox="0 0 1600 900"
+                >
+                <defs>
+                    <path
+                    id="wave"
+                    fill="rgba(88, 46, 87, 0.6)"
+                    d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+                    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+                    />
+                </defs>
+                <g>
+                    <use xlink:href="#wave" opacity=".4">
+                        <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="8s"
+                        calcMode="spline"
+                        values="270 230; -334 180; 270 230"
+                        keyTimes="0; .5; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                        repeatCount="indefinite"
+                        />
+                    </use>
+                    <use xlink:href="#wave" opacity=".6">
+                        <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="6s"
+                        calcMode="spline"
+                        values="-270 230;243 220;-270 230"
+                        keyTimes="0; .6; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                        repeatCount="indefinite"
+                        />
+                    </use>
+                    <use xlink:href="#wave" opacty=".9">
+                        <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="4s"
+                        calcMode="spline"
+                        values="0 230;-140 200;0 230"
+                        keyTimes="0; .4; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                        repeatCount="indefinite"
+                        />
+                    </use>
+                </g>
+            </svg>
+        </div>
+        <section>
+            <ul class="socials">
+                <li><a class="fa-brands fa-x-twitter"></a></li>
+                <li><a class="fa-brands fa-facebook"></a></li>
+                <li><a class="fa-brands fa-linkedin"></a></li>
+            </ul>
+            <ul class="links">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Skillset</a></li>
+                <li><a>Hire</a></li>
+            </ul>
+            <!-- <p class="legal">© 2024 All rights reserved</p> -->
+        </section>
+    </footer> 
     
+    
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
