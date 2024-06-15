@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
-
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+  
+}
+/* * {
+  outline: 1px solid #f00 !important;
+} */
 /* LANDING PAGE */
 .signature{
     position: fixed;
@@ -9,18 +18,18 @@
 
 /* navbar */
 .nav-li{
-    font-size: 23px;
-    font-weight: 600;
-    border: 1px solid #773065;
-    background-color: #A26092;
-    margin: 20px 20px 20px 20px;
-    padding: 10px 20px;
-    border-radius: 10%;
+  font-size: 23px;
+  font-weight: 600;
+  border: 1px solid #773065;
+  background-color: #A26092;
+  margin: 20px 20px 20px 10px;
+  padding: 8px 16px;
+  border-radius: 10%;
 }
 
 .navbar-nav{
     position: fixed;
-    top: 20%;
+    top: 25%;
 }
 
 .navbar-nav .nav-li .nav-link.nav-text {
@@ -31,7 +40,7 @@
 }
 
 .nav-back{
-    margin-top: 40px;
+    /* margin-top: 40px; */
     background-color: #faebff;
     width: min-content;
 }
@@ -47,7 +56,8 @@
     position: absolute;
     top: 0;
     left: 15%; 
-    width: calc(100% - 190px); 
+    width:70%;
+    /* width: calc(100% - 190px);  */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -58,11 +68,12 @@
 }
 
 .front-content {
+  position: relative;
     text-align: left;
     color: #555;
-    left: 20%;
+    /* left: 20%;
     top: 38%;
-    position: absolute;
+    position: absolute; */
 }
 
 .imgk{
@@ -75,30 +86,39 @@
 }
 
 .waving-icon {
-    font-size: 1px; 
-    animation: wave 2s infinite; 
+    animation: wave 3s infinite; 
 }
 
 @keyframes wave {
     0%, 100% {
-        transform: rotate(0deg); /* Initial and final position */
+        transform: rotate(0deg); 
     }
-    25% {
-        transform: rotate(-45deg); /* Rotate left */
+    20% {
+        transform: rotate(-45deg);
     }
-    75% {
-        transform: rotate(45deg); /* Rotate right */
+    40% {
+      transform: rotate(45deg); 
+    }
+    60% {
+      transform: rotate(-45deg); 
+    }
+    85% {
+      transform: rotate(45deg);
     }
 }
 
 
 .waving-icon {
-    font-size: 48px;
-    position: absolute;
-    left: 13%;
-    top: 30%;
+  position: relative;
+  font-size: 70px;
+  top: 4%;
+  right: 40%;
 }
-
+@media (min-width:200) and (max-width:400) {
+  .waving-icon{
+    font-size: 40px;
+  }
+}
 /* ABOUT */
 .about {
     position: absolute;
@@ -109,7 +129,6 @@
 }
 
 .about-heading {
-    
     margin-left: 50%;
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -146,261 +165,257 @@
 
  
 /* PROJECTS */
-
-.projects {
-    position: absolute;
-    top: 270%;
-    bottom: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-     /* height: 100vh;  */
-    display: grid;
-    place-items: center;
-    color: #1e293b;
-    font-family: "Euclid Circular A", "Poppins";
-  }
-
-  .project-heading {
-    margin-left: 90%;
+.projects{
+  position: absolute;
+  top: 280%;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.project-heading {
+    margin-left: 50%;
     font-family: 'Raleway', sans-serif;
     text-align: center;
     transform: translate(-50%, -50%);
     font-size:120px;
-      letter-spacing:0.05em;
+      letter-spacing:0.1em;
     -webkit-text-fill-color: transparent;
-   
     -webkit-text-stroke-color: white;
     text-shadow: -5px -3px 0px #a26092, 5px -14px 4px #000000;;
 }
-  
-.pcards-container  h2,
-  h3,
-  h4 {
-    margin: 0;
-    font-weight: 700;
-  }
-  
-  .pcards {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 50px;
-    margin-left: 60px;
-  }
-  
-  article {
-    position: relative;
-    perspective: 1000px;
-    width: 300px;
-    height: 300px;
-  }
-  
-  article header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-    margin-bottom: 26px;
-  }
-  
-  article header h2 {
-    font-size: 20px;
-  }
-  
-  article .front,
-  article .back {
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
-    width: 100%; /* Ensure the width adapts to the parent */
-    height: 100%;
-    text-align: center;
-    backface-visibility: hidden;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-      rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
-    padding: 24px;
-    transition: 0.6s;
-    cursor: pointer;
-  }
-  
-  .back {
-    transform: rotateY(180deg);
-  }
-  
-  input {
-    position: absolute;
-    scale: 0;
-  }
-  
-  input:checked ~ article .back {
-    transform: rotateY(0);
-  }
-  
-  input:checked ~ article .front {
-    transform: rotateY(-180deg);
-  }
-  
-  article var {
-    font-style: normal;
-    font-size: 80px;
-    line-height: 1;
-  }
-  
-  article h3 {
-    margin: 0 0 30px;
-    font-weight: 500;
-  }
-  
-  #summary :is(var, h3) {
-    color: #3b82f6;
-  }
-  
-  #overdue :is(var, h3) {
-    color: #ef4444;
-  }
-  
-  #features :is(var, h3) {
-    color: #22c55e;
-  }
-  
-  article :is(h4, p) {
-    opacity: 0.5;
-    font-size: 20px;
-  }
-  
-  article p {
-    margin-top: 76px;
-  }
 
-  #safar{
-    background-image: url("https://nextvacay.com/wp-content/uploads/2023/07/world-travel-2.jpg");
-    background-size: 100% 100%;
+.project {
+  margin: 0;
+  margin-left: 10%;
+  display: grid;
+  gap: 30px;
+  background: #faebff;
+  color: #1e293b;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.cards {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+}
+#safar{
+  background-image: url(resources/safar.png);
+  background-size: 300px 300px;
+}
+#drumkit{
+  background-image: url(resources/drumkit.png);
+  background-size: 300px 300px;
+}
+#simongame{
+  background-image: url(resources/simongame.png);
+  background-size: 300px 300px;
+}
+#recipe{
+  background-image: url(resources/recipe.png);
+  background-size: 300px 300px;
+}
+#instaclone{
+  background-image: url(resources/instaclone.png);
+  background-size: 300px 300px;
+}
+#capsuleclock{
+  background-image: url(resources/capsuleclock.png);
+  background-size: 300px 300px;
+}
+#moneybuddy{
+  background-image: url(resources/moneybuddy.png);
+  background-size: 300px 300px;
+}
+
+article {
+  position: relative;
+  perspective: 350px;
+  width: 300px;
+  height: 300px;
+}
+
+article header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 26px;
+}
+
+article header h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+article .front,
+article .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  backface-visibility: hidden;
+  background: #fbfbff;
+  border-radius: 10px;
+  padding: 24px;
+  transition: 0.6s;
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+input {
+  position: absolute;
+  scale: 0;
+}
+
+input:checked ~ article .back {
+  transform: rotateY(0);
+}
+
+input:checked ~ article .front {
+  transform: rotateY(-180deg);
+}
+
+@media (max-width: 599px) {
+  .cards {
+    /* margin-left: 15%; */
+    grid-template-columns: 1fr;
   }
-  #drumkit{
-    background-image: url("https://kaizenaire.com/wp-content/uploads/2023/09/The-Aesthetic-Appeal-of-Drum-Sets-Singapore-1024x574.png");
-    background-size: 100% 100%;
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
   }
-  #capsuleclock{
-    background-image: url("https://media.istockphoto.com/id/1317221129/vector/old-woman-reminded-to-take-medicine-medication-and-reminder-concept-vector-flat-cartoon.jpg?s=612x612&w=0&k=20&c=LF6e_G4Ag3TLJVu9tgC4uJbLvIiJgcHAFKqZ05PyOY4=");
-    background-size: 100% 100%;
+}
+
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
   }
-  #simongame{
-    background-image: url("https://global.discourse-cdn.com/business7/uploads/replitteams/original/3X/d/e/de9b3ef06b1be7a183056e559529989f7a35649e.png");
-    background-size: 100% 100%;
-  }
+}
 
 
   /* footer */
 
-  .contact-heading {
-    margin-top: 150px;
-    margin-left: 90%;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    font-size:120px;
-      letter-spacing:0.05em;
-    -webkit-text-fill-color: transparent;
-   
-    -webkit-text-stroke-color: white;
-    text-shadow: -5px -3px 0px #a26092, 5px -14px 4px #000000;;
+.contact-heading {
+  position: absolute;
+  top: 500%;
+  margin-left: 55%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size:120px;
+  letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: white;
+  text-shadow: -5px -3px 0px #a26092, 5px -14px 4px #000000;;
 }
 
-  footer {
-    margin: 0;
-    /* background: linear-gradient(#fcf1ff, #ac93a3); */
-    font-family: "Euclid Circular A", "Poppins";
-    color: rgb(255, 255, 255);
+.contacts {
+  margin: 0;
+  /* background: linear-gradient(#8c4df0, #ff3c3c); */
+  font-family: "Euclid Circular a", "Poppins";
+  color: #eaf0ff;
+}
 
-    position: absolute;
-    left: 0;
-   top:450%;
-    
-    /* bottom: 0; */
-    display: flex;
-    width: 61.5%;
-    height: 400px;
-  }
-  
-  /* html,
-  body {
-    height: 100%;
-  } */
-  
-  .background {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
-  .socials, .links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .socials {
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(3) scaleX(2.25);
+  transform-origin: bottom;
+  box-sizing: border-box;
+  display: block;
+  pointer-events: none;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.socials {
+  gap: 20px;
+}
+
+.socials a {
+  font-size: 24px;
+}
+
+.links  {
+  gap: 10px;
+  flex-direction: column;
+}
+
+footer {
+  position:absolute;
+  top: 510%;
+  display: flex;
+  width:100%;
+  height: 370px;
+  overflow-x: hidden;
+}
+footer a{
+  color: rgb(255 255 255);
+  text-decoration: none;
+  letter-spacing: .25ch;
+  word-spacing: 5ch;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  justify-items: center;
+  gap: 30px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+  width: 100%;
+}
+
+@media (width > 420px) {
+  section {
+    align-items: center;
+    padding-left: 0;
     gap: 20px;
   }
-  
-  .socials a {
-    font-size: 24px;
-  }
-  
+
   .links {
-    gap: 10px;
+    gap: 20px;
+    font-size: medium;
+    font-weight: 600;
   }
-  
-  .legal {
-    font-size: 12px;
-    margin: 0;
-  }
-  
-  svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: scaleY(3) scaleX(2.25);
-    transform-origin: bottom;
-    box-sizing: border-box;
-    display: block;
-    pointer-events: none;
-  }
-  
-
-  
-  section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 30px;
-    padding-bottom: 50px;
-    padding-left: 60px;
-    width: 100%;
-    font-weight: 500;
-  }
-  
-  @media (width > 20px) {
-    section {
-      align-items: center;
-      padding-left: 90%;
-      gap: 20px;
-    }
-  
-    .links {
-      gap: 20px;
-    }
-  }
+}
 
 
 
+body, html {
+  overflow-x: hidden;
+}
+/* .main-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+} */
